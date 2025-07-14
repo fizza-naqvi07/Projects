@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/mlogo.png.jpg" alt="Mar Academy Logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="OurTeam.html">OUR TEAM</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+        <div class="about-us">
+            <div class="row">
+                <div class="box">
+                    <h2>MISSION</h2>
+                    <p>At MAR Academy, our mission is to provide personalized, high-quality education that empowers students to achieve their fullest potential. We create a supportive environment where academic excellence and personal growth thrive, preparing students for success in their academic and professional journeys.</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="box">
+                    <h2>VISION</h2>
+                    <p>Our vision is to be a leading academy known for transforming education through innovative, accessible learning. We aim to inspire students to become lifelong learners, equipped with the knowledge and skills to succeed in a rapidly evolving world.</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="box">
+                    <h2>AIMS AND OBJECTIVES</h2>
+                    <p>At MAR Academy, we aim to provide high-quality, personalized tutoring that meets the needs of every student. We strive to create a supportive environment that fosters both academic excellence and personal growth. Our goal is to use innovative teaching strategies and resources to help students understand and retain material effectively. By building strong partnerships with students, families, and the community, we ensure that each student receives the support they need to succeed in their educational journey.</p>
+    
+                    <p><b>Short-term Objectives (1-2 years):</b> In the first two years, we aim to build a team of skilled tutors and implement a comprehensive curriculum that aligns with national education standards. We will work towards serving at least 50% of students through individualized tutoring and aim for a student satisfaction rate of 90% or higher.</p>
+    
+                    <p><b>Mid-term Objectives (2-5 years):</b> We will expand our services to include online tutoring and develop programs for students with disabilities. Collaborations with local institutions will enhance the resources available to students, and our goal is for 95% of students to perform well in major exams by the end of this phase.</p>
+    
+                    <p><b>Long-term Objectives (5+ years):</b> Our long-term vision is to establish a modern, state-of-the-art educational institution that provides internship and career placement opportunities. We will continue to expand our services, offering vocational training and specialized programs to meet the evolving needs of students and the workforce.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>MAR Academy is dedicated to providing high-quality education that empowers students to reach their full potential. With a focus on personalized learning and academic excellence, we offer a supportive environment where students from diverse backgrounds can thrive.
+            Our team of experienced educators is committed to fostering a passion for learning and preparing students for success in their academic and professional lives. </p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61568317302141&mibextid=ZbWKwL" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/mar.academy?igsh=MW94c2Y0OHRxMzg1eg==" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

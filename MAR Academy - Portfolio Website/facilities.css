@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(7, 7, 24);
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+    background-color: transparent;
+}
+
+nav img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    margin-left: 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/cover4.png.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.sub-header h1 {
+    margin-top: 0;
+    font-size: 3.5rem; 
+    font-weight: bold;
+    text-shadow: 
+    0 0 3px rgba(255, 255, 255, 0.4),  
+    0 0 5px rgba(255, 255, 255, 0.4), 
+    0 0 8px rgba(255, 255, 255, 0.5), 
+    0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.facilities h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.facilities p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.6;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.facilities-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.facility-box {
+    background-color: wheat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px white; 
+    width: 30%; 
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: left; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.facility-box h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.facility-box p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.8; 
+    margin: 10px 0; 
+}
+
+/* Responsive Design for Medium Screens (Tablets) */
+@media (max-width: 768px) {
+    .facility-box {
+        width: 45%; /* 2 items per row on medium screens */
+    }
+}
+
+/* Responsive Design for Small Screens (Mobile) */
+@media (max-width: 500px) {
+    .facility-box {
+        width: 100%; /* 1 item per row on small screens */
+    }
+}
